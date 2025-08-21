@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main() {
+    printf("tanny Bha\t");
+    return 0;
+}
