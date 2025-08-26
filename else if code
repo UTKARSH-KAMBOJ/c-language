@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int a;
+    printf("enter the num:");
+    scanf("%d",&a);
+    if(a%3==0){
+        printf("three");
+        
+    }
+    else if(a%4==0) {
+        printf("four");
+
+    }
+    else if(a%5==0){
+        printf("five");
+
+    }
+    else{
+        printf("not divisible by anyone");
+    }
+    
+    return 0;
+}
