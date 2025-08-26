@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+    float BMI;
+    printf("enter the body mass idex:");
+    scanf("%f",&BMI);
+    if(BMI<=15){
+        printf("you fall in startation");
+
+    }
+    else if(BMI>=15.1 || BMI<=17.5){
+        printf("you fall in anorexic");
+    }
+   else if(BMI>=17.6 && BMI<=18.5){
+    printf("you fall in underweight");
+   }
+   else if(BMI>=18.6 && BMI<=24.9){
+    printf("you fall in ideal");
+   }
+   else if(BMI>=25 && BMI<=25.9){
+    printf("you fall in overweight");
+   }
+   else if(BMI>=30 && BMI<=39.9){
+    printf("you fall in obese");
+   }
+   else{
+    printf("you will fall in morbitiy obese");
+   }
+    return 0;
+}
