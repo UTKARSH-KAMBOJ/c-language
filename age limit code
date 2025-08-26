@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int a;
+    printf("enter the age:");
+    scanf("%d",&a);
+    if(a>18){
+        printf("you eligile to vote");
+
+    }
+    else{
+        printf("you not eligile to vote");
+    }
+    return 0;
+}
