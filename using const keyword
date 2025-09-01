@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    const int height=100;
+    const float number=3.14;
+    const char letter='A';
+    const char letter_sequence[10]="ABC";
+    const char backslash_char='\?';
+    printf("value of height:%d",height);
+    printf("value of number:%f",number);
+    printf("value of letter:%c",letter);
+    printf("value of letter_sequence:%s",letter_sequence);
+    printf("value of backslash_char:%c",backslash_char);
+    return 0;
+}
