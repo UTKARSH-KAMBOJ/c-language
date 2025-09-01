@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+    char pname[20];
+    int pid;
+    int qty;
+    char mname[50];
+    char category[50];
+    printf("enter the product name:");
+    scanf("%s",pname);
+    printf("enter the pid:");
+    scanf("%d",&pid);
+    printf("enter the quantity:");
+    scanf("%d",qty);
+    printf("enter the manufacturer name:");
+    scanf("%s",mname);
+    printf("enter the category name:");
+    scanf("%s",category);
+    printf("product name is:%s\n",pname);
+    printf("product id is:%d\n",pid);
+    printf("product quntity:%d\n",qty);
+    printf("manufacturer  name is:%s\n",mname);
+    printf("catergory name:%s\n",category);
+    return 0;
+}
