@@ -1,0 +1,16 @@
+#include<stdio.h>
+#define AGE 20
+int main(){
+    int your_age;
+    printf("enter your age:");
+    scanf("%d",&your_age);
+    if(your_age>=AGE)
+    {
+        printf("eligible for voting");
+
+    }
+    else{
+        printf("not eligible for voting");
+    }
+    return 0;
+}
