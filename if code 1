@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(void){
+if(33444.5556656)
+printf("hi");
+return 0;
+}
