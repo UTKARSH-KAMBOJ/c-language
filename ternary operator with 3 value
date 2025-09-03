@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("enter thr value of a:");
+    scanf("%d",&a);
+    printf("enter the value of b:");
+    scanf("%d",&b);
+    printf("enter the value of c:");
+    scanf("%d",&c);
+    a>b?printf("%d",a): c>b? printf("%d",c):printf("%d",b);
+    return 0;
+
+}
