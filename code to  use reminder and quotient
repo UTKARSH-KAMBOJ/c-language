@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int n;
+    int r;
+    int q;
+    printf("enter the value of number:");
+    scanf("%d",&n);
+    r=n%2;
+    printf("%d\n",r);
+    q=n/4;
+    printf("%d",q);
+    return 0;
+}
