@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+    int n,r,c,s,s1=0;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    int i;
+
+    while(n>0){
+        r=n%10;
+        s=r+(s*10);
+        n=n/10;
+    }
+    while(n>0){
+        r=n%10;
+        s1=r+(s*10);
+        n=n/10;       
+    }
+    if(n==s1){
+        printf("num=n2");
+
+    }
+    else{
+        printf("nothing");
+    }
+    return 0;
+}
