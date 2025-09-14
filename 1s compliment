@@ -1,0 +1,51 @@
+/*Q40: Write a program to find the 1’s complement of a binary number and print it.*/
+
+/*
+Sample Test Cases:
+Input 1:
+1010
+Output 1:
+0101
+
+Input 2:
+1111
+Output 2:
+0000
+
+*/
+#include <stdio.h>
+
+int main() {
+    int n, digit, rev = 0, count = 0;
+
+    printf("Enter a binary number: ");
+    scanf("%d", &n);
+
+    // First reverse the input number to process left to right
+    int temp = n;
+    while (temp > 0) {
+        digit = temp % 10;
+        rev = rev * 10 + digit;
+        temp = temp / 10;
+        count++;  // Count digits for leading zeros
+    }
+
+    printf("1's Complement: ");
+    // Now compute and print 1's complement of each digit
+    while (rev > 0 || count > 0) {
+        digit = rev % 10;
+        if (digit == 1)
+            printf("0");
+        else if (digit == 0)
+            printf("1");
+        else {
+            printf("\nInvalid binary digit: %d\n", digit);
+            return 1;
+        }
+        rev = rev / 10;
+        count--;
+    }
+
+    printf("\n");
+    return 0;
+}
