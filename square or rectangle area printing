@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int l,b;
+    printf("enter the value of n:");
+    scanf("%d%d",&l,&b);
+    if(l==b){
+        int area=l*b;
+        printf("area of square is:%d",area);
+
+    }
+    else{
+        int area1=l*b;
+        printf("area of rectangle is:%d",area1);
+    }
+    return 0;
+
+}
