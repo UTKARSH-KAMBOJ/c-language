@@ -1,0 +1,21 @@
+#include<stdio.h>
+ int main(){
+   int n=0;
+   int sum=0;
+   printf("enter the no:");
+   scanf("%d",&n);
+   int originalnum=n;
+while(n>0){
+   int rem=n%10;
+   sum+=rem;
+   n=n/10;
+}
+if(originalnum%sum==0){
+   printf("the value is%d",sum);
+
+}
+else{
+   printf("the value is -1");
+}
+return 0;
+ }
