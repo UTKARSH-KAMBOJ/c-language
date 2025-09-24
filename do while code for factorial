@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int n;
+    int i=1;
+    int fact=1;
+    printf("enter the num of your choice:");
+    scanf("%d",&n);
+    do{
+         fact*=i;
+printf("%d\n",fact);
+        i++;
+    }
+    while(i<=5);
+    return 0;
+
+}
