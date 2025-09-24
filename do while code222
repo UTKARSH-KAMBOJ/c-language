@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+int n=0;
+do
+{
+    printf("enter the number of your choise:");
+    scanf("%d",&n);
+    printf("the value of num is %d",n);
+} while (n!=0);
+
+
+return 0;
+}
