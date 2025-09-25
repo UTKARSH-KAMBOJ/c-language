@@ -1,0 +1,12 @@
+#include<stdio.h>
+void sum(int a,int b){
+    printf("%d\n",a+b);
+}
+void prod(int c,int d){
+    printf("%d\n",c*d);
+}
+int main(){
+sum(2,3);
+prod(2,3);
+return 0;
+}
