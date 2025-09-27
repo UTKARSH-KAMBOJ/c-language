@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
  int main(){
    int a;
    int b;
@@ -11,6 +11,9 @@
    scanf("%d",&b);
    int m;
    int i;
+   int j;
+   int k;
+   int l;
    switch(n){
       case 1:
       
@@ -33,6 +36,7 @@
          else{
             printf("a is greater then b");
          }
+         break;
          case 3:
          if(a<=b){
             printf("a is less than equal to b");
@@ -40,6 +44,7 @@
          else {
             printf("b is less than equal to a");
          }
+         break;
          case 4:
          if(a>=b){
             printf("a is greater then equal to b");
@@ -47,6 +52,7 @@
          else{
             printf("b is grater then equal to a");
          }
+         break;
          case 5:
          if(a==b){
             printf("a is equal to b");
@@ -54,6 +60,7 @@
          else {
             printf("a is not equal to b");
          }
+         break;
          case 6:
          if(a!=b){
             printf("a is not equal to b");
@@ -61,7 +68,9 @@
          else{
             printf("a is equal to b");
          }
+         break;
       }
+      break;
       case 2:
     
       printf("enter 1.&& \n 2. ||\n 3. !");
@@ -87,6 +96,60 @@
             printf("a is equal to b");
          }
       }
+      break;
+      case 3:
+      printf("enetr 1.&\n2.|\n3.~");
+      scanf("%d",&j);
+      switch(j){
+        case 1:
+        printf("%d",a&b);
+        break;
+        case 2:
+        printf("%d",a|b);
+        break;
+        case 3:
+        printf("for a:%d",~a);
+        printf("for b:%d",~b);
+        break;
+      }
+      case 4:
+      printf("enter 1.+=\n2.-=\n3.*=\n4./=");
+      scanf("%d",&k);
+      switch(k){
+        case 1:
+        printf("a+=%d",a+=b);
+        break;
+        case 2:
+        printf("-=%d",a-=b);
+        break;
+        case 3:
+        printf("*=%d",a*=b);
+        break;
+        case 4:
+        printf("/=%d",a/=b);
+        break;
+      }
+      break;
+      case 5:
+      printf("enter 1.++a\n2.--a\n3.a++\n4.a--");
+      scanf("%d",&l);
+      switch(l)
+      {
+      case 1:
+      printf("++a:%d",++a);
+      break;
+      case 2:
+      printf("--a:%d",--a);
+      break;
+      case 3:
+      printf("a++:%d",a++);
+      break;
+      case 4:
+      printf("a--:%d",a--);
+      break;
+      }
+
+
       
    }
    return 0;
