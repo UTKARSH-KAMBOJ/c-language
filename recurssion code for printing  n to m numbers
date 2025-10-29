@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int n = 0;
+int m = 0;
+
+void fun();
+
+int main() {
+    printf("enter the starting value: ");
+    scanf("%d", &n);
+    printf("enter the final value: ");
+    scanf("%d", &m);
+
+    fun();
+    return 0;
+}
+
+void fun() {
+    n++;                    // increment n
+    printf("%d\n", n);      // print current value
+
+    if (n < m) {            // recursion continues until n == m
+        fun();
+    }
+}
