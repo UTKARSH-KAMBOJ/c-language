@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+typedef struct players{
+    char name[100];
+    int age;
+    int test_matches;
+    int average_run;
+
+}players;
+int main(){
+    players arr[2];
+    strcpy(arr[0].name,"kk");
+    arr[0].age=20;
+    arr[0].average_run=90;
+    arr[0].test_matches=3;
+    strcpy(arr[1].name,"js");
+    arr[1].age=34;
+    arr[1].average_run=29;
+    arr[1].test_matches=5;
+    int i=0;
+    for(i=0;i<2;i++){
+        printf("%s",arr[0].name);
+        printf("%d",arr[0].age);
+        printf("%d",arr[0].average_run);
+        printf("%d",arr[0].test_matches);
+    }
+    return 0;
+}
