@@ -1,0 +1,29 @@
+/*Declare different types of pointers (int, float, char) and initialize them with the addresses of variables. Print the values of both the pointers and the variables they point to.*/
+#include <stdio.h>
+
+int main() {
+    int x = 5;
+    float y = 2.5;
+    char c = 'k';
+
+    int *ptr = &x;
+    float *ptr1 = &y;
+    char *ptr2 = &c;
+
+    // Print variable values
+    printf("x = %d\n", x);
+    printf("y = %f\n", y);
+    printf("c = %c\n", c);
+
+    // Print pointer values (addresses)
+    printf("ptr (address of x) = %p\n", ptr);
+    printf("ptr1 (address of y) = %p\n", ptr1);
+    printf("ptr2 (address of c) = %p\n", ptr2);
+
+    // Print values using pointers
+    printf("*ptr = %d\n", *ptr);
+    printf("*ptr1 = %f\n", *ptr1);
+    printf("*ptr2 = %c\n", *ptr2);
+
+    return 0;
+}
