@@ -1,0 +1,27 @@
+/*array input from user ,print that number which not repeat more that one time*/
+#include <stdio.h>
+
+int main() {
+    int n = 0;
+    printf("Enter the limit of array: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter the elements:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    printf("Non-repeated numbers are:\n");
+    for (int i = 0; i < n; i++) {
+        int count = 0;
+
+        for (int j = 0; j < n; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+            }
+        }
+        if (count == 1) {  
+            printf("%d ", arr[i]);
+        }
+    }
+    return 0;
+}
